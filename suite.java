@@ -1,10 +1,37 @@
 package javaGit;
+import java.util.Date;
 
 
 public class suite {
 
 	public static void main(String[] args) {
+		System.out.println("Algo : RESULTAT \n DEBUT");
+		Date duJour = new Date();	
+		/*duJour.aujourdhui();
+		duJour.maintenant();*/
+		duJour.saisirDate();
+		}
+	}
+	/*
+	public static void testGrandeur() {
+		int i;
+		int j;
+		i=Clavier.lireInt();
+		j=Clavier.lireInt2();
+		if (i>j) {
+			System.out.println("Le chiffre: "+i +" est le plus grand chiffre!");
+		}
+		else if (j>i) {
+			System.out.println("Le chiffre: "+j +" est le plus grand chiffre!");
+		}
+		else {
+			System.out.println("Les deux chiffres sont égaux!");
+		}
+		//System.out.println(i>j ? "Le chiffre: "+i +" est le plus grand chiffre!":"Le chiffre: "+j +" est le plus grand chiffre!");
+	}*/
+
 		// TODO Auto-generated method stub
+		/*
 		System.out.println("Algo : RESULTAT \n DEBUT");
 		int i;
 		System.out.println("Veuillez saisir la note:");
@@ -36,5 +63,7 @@ public class suite {
 		}
 		System.out.println("FIN");
 		}
+*/
+	
 
-}
+
