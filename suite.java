@@ -1,16 +1,27 @@
 package javaGit;
-import java.util.Date;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class suite {
 
 	public static void main(String[] args) {
-		System.out.println("Algo : RESULTAT \n DEBUT");
-		Date duJour = new Date();	
-		/*duJour.aujourdhui();
-		duJour.maintenant();*/
-		duJour.saisirDate();
+		System.out.println("Aujourd'hui nous sommes le:");
+		String dateAujourdhui;
+		dateAujourdhui=Journee.aujourdhui();
+		System.out.println(dateAujourdhui);
+		
+		System.out.println("Quelle heure est-il?");	
+		String heureAujourdhui;
+		heureAujourdhui=Journee.maintenant();
+		System.out.println(heureAujourdhui);
+		
+		System.out.println("Pour vous, quel jour sommes-nous?");	
+		Journee.saisirDate(10,12,2021);
+		/*duJour.maintenant();
+		duJour.saisirDate();*/
 		}
+	
 	}
 	/*
 	public static void testGrandeur() {
