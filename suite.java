@@ -52,12 +52,14 @@ public class suite {
 				if (m==p) {
 					System.out.println("Computer choice : Paper");
 					System.out.println("You loose");
+					--j;
+					gameScore();
 				}
 					
 				else if (m==s) {
 					System.out.println("Computer choice : Scisors");
 					System.out.println("You win");
-					score++;
+					gameScore();
 				}
 			}
 					
@@ -65,12 +67,14 @@ public class suite {
 					if (m==r) {
 						System.out.println("Computer choice : Rock");
 						System.out.println("You win");
-						score++;
+						gameScore();
 					}
 						
 					else if (m==s) {
 						System.out.println("Computer choice : Scisors");
 						System.out.println("You loose");
+						--j;
+						gameScore();
 					}	
 				
 			}
@@ -78,18 +82,25 @@ public class suite {
 				if (m==p) {
 					System.out.println("Computer choice : Paper");
 					System.out.println("You win");
-					score++;
+					gameScore();
 				}
 					
 				else if (m==r) {
 					System.out.println("Computer choice : Scisors");
 					System.out.println("You loose");
+					--j;
+					gameScore();
 				}	
 			
 			}
-		System.out.println("Your score: "+ score);
+		System.out.println("Your score: "+ j);
 		
 	
+	}
+	static int j =0;
+	public static void gameScore(){
+		++j;
+		System.out.println("Your score is at : "+j);
 	}
 }	
 		/*int i, n, som;
