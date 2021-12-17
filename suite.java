@@ -6,6 +6,12 @@ import java.util.Date;
 public class suite {
 
 	public static void main(String[] args) {
+		
+		}
+	
+	}
+
+/*
 		System.out.println("Aujourd'hui nous sommes le:");
 		String dateAujourdhui;
 		dateAujourdhui=Journee.aujourdhui();
@@ -18,11 +24,7 @@ public class suite {
 		
 		System.out.println("Pour vous, quel jour sommes-nous?");	
 		Journee.saisirDate(10,12,2021);
-		/*duJour.maintenant();
-		duJour.saisirDate();*/
-		}
-	
-	}
+		*/
 	/*
 	public static void testGrandeur() {
 		int i;
