@@ -2,15 +2,45 @@ package javaGit;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
 
 public class suite {
 
 	public static void main(String[] args) {
 		
-		}
-	
+		
 	}
+}
+		/*Scanner sc = new Scanner(System.in);
+		int valeur;
+		String chaine_lue;
+		try {
+		    do {
+		         // Lecture d'une ligne au clavier
+		         chaine_lue = sc.nextLine();
+		         //Conversion de la chaine en entier
+		         valeur=Integer.parseInt(chaine_lue);
+		       }
+		    while ((valeur < 5) || ( valeur > 10));
+		} 
+		catch (Exception e) {
+		    System.out.println("Erreur d'Entree/Sortie " + e.getMessage());
+		}*/		
+		
+		/*final int fin =10;
+		int somme = 0;
+		int i =0;
+		while(i<fin) {
+			somme+=i;
+			System.out.println(somme);
+			System.out.println(i);
+			i++;
+			System.out.println("La somme vaut :"+ somme);
+		}*/
 
+/*for (int i = 5; i <= 10; i=i+2) {
+            System.out.println(i);
+            }*/
 /*
 		System.out.println("Aujourd'hui nous sommes le:");
 		String dateAujourdhui;
