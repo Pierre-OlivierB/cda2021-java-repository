@@ -1,5 +1,7 @@
 package javaGit;
 
+import java.awt.print.Paper;
+import java.rmi.server.RemoteStub;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
@@ -7,7 +9,90 @@ import java.util.Scanner;
 public class suite {
 
 	public static void main(String[] args) {
-		int i, n, som;
+		boolean test = true;
+		do {
+			
+			game();
+			System.out.println("Voulez-vous Continuer? yes/no");
+			String reponse=Clavier.lireString();
+			System.out.println("Your choice: "+reponse);
+			if (reponse=="yes") {
+				test = true;
+			}
+			else {
+				test = false;
+			}
+			
+		} 
+		while (test);
+	}
+	
+	public static void game() {
+		int n ,m ,r ,p ,s;
+		int score=0;
+		m=0;
+		r=1;
+		p=2;
+		s=3;
+		do {
+			System.out.println("Rock(1), Paper(2), Scisors(3)");
+			System.out.println("Your choice: 1 or 2 or 3");
+			n=Clavier.lireInt();
+			for(int i=1; i<=3;i++) {
+				m=(int)(Math.random()*3)+1;
+			}
+			System.out.println("Computer choice: "+m);
+			if (n==m) {
+				System.out.println("Same choice, try again!");
+			}
+		}
+		while(n==m);
+			
+		if(n==r) {
+				if (m==p) {
+					System.out.println("Computer choice : Paper");
+					System.out.println("You loose");
+				}
+					
+				else if (m==s) {
+					System.out.println("Computer choice : Scisors");
+					System.out.println("You win");
+					score++;
+				}
+			}
+					
+		else if(n==p) {
+					if (m==r) {
+						System.out.println("Computer choice : Rock");
+						System.out.println("You win");
+						score++;
+					}
+						
+					else if (m==s) {
+						System.out.println("Computer choice : Scisors");
+						System.out.println("You loose");
+					}	
+				
+			}
+		else if(n==s) {
+				if (m==p) {
+					System.out.println("Computer choice : Paper");
+					System.out.println("You win");
+					score++;
+				}
+					
+				else if (m==r) {
+					System.out.println("Computer choice : Scisors");
+					System.out.println("You loose");
+				}	
+			
+			}
+		System.out.println("Your score: "+ score);
+		
+	
+	}
+}	
+		/*int i, n, som;
         som = 0;
         i=0;
         for (i = 0; i < 4; i++) {
@@ -27,10 +112,7 @@ public class suite {
 				System.out.println("recalé");
 			}
         	
-        }
-	}
-}	
-		
+        }*/
 		
 	        /*int i, n, som;
 	        som = 0;

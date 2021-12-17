@@ -22,6 +22,11 @@ public class Clavier {
 		return test3;
 		
 	}
-	
+	public static String lireString() {
+		Scanner choiceFour= new Scanner(System.in);
+		String test4 = choiceFour.nextLine();
+		return test4;
+		
+	}
 
 }
