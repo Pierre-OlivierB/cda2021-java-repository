@@ -7,7 +7,56 @@ import java.util.Scanner;
 public class suite {
 
 	public static void main(String[] args) {
-		for (int i = 0; i < 12; i++) {
+		int i, n, som;
+        som = 0;
+        i=0;
+        for (i = 0; i < 4; i++) {
+            System.out.println(i+"-Donnez une notez sur 20");
+            n = Clavier.lireInt();
+            som += n;
+        }
+        System.out.println("Moyenne = " + (som/4)+ "/20.");
+        if((som/4)>=10) {
+        	System.out.println("admis");
+        }
+        else if((som/4)<10) {
+        	if((som/4)>=8) {
+        		System.out.println("admissible");
+        	}
+        	else if ((som/4)<8) {
+				System.out.println("recalé");
+			}
+        	
+        }
+	}
+}	
+		
+		
+	        /*int i, n, som;
+	        som = 0;
+	        i=0;*/
+	        /*for (i = 0; i < 4; i++) {
+	            System.out.println(i+"-Donnez un entier");
+	            n = Clavier.lireInt();
+	            som += n;
+	        }*/
+	        
+	        /*while (i<4) {
+	        	System.out.println(i+"-Donnez un entier");
+	            n = Clavier.lireInt();
+	            som += n;
+				i++;
+			}*/
+	        /*do {
+	        	System.out.println(i+"-Donnez un entier");
+	        	n = Clavier.lireInt();
+	        	som += n;
+	        	i++;
+	        }
+	        while(i<4);
+	        System.out.println("Somme = " + som);*/
+
+/*for (int i = 0; i < 12; i++) {
 		      switch (i) {
 		        case 9:
 		          System.out.println("Neuf");
@@ -41,9 +90,9 @@ public class suite {
 		          break;
 		      }
 		    }
-		 System.out.println("Fin");
-	}
-}
+		 System.out.println("Fin");*/
+
+
 /*int x = 1; 
 		double a = 0;
 		for( x = 1; x <= 10; x++){
