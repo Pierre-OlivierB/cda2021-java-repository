@@ -9,22 +9,25 @@ import java.util.Scanner;
 public class suite {
 
 	public static void main(String[] args) {
-		boolean test = true;
-		do {
+		/*boolean test = true;
+		do {*/
 			
 			game();
 			System.out.println("Voulez-vous Continuer? yes/no");
 			String reponse=Clavier.lireString();
 			System.out.println("Your choice: "+reponse);
-			if (reponse=="yes") {
-				test = true;
+			if (reponse.equals("yes")) {
+				main(args);
 			}
 			else {
-				test = false;
+				/*test = false;*/
+				System.out.println("Your score: "+ j);
+				System.out.println("Merci d'avoir joué à la prochaine!");
+				System.out.println("End!");
 			}
 			
-		} 
-		while (test);
+		/*} 
+		while (test);*/
 	}
 	
 	public static void game() {
